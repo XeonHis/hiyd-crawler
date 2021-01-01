@@ -9,10 +9,13 @@ import scrapy
 
 
 class FoodCrawlerItem(scrapy.Item):
+    cate_name = scrapy.Field()
+    food_name = scrapy.Field()
+    food_url = scrapy.Field()
     calories = scrapy.Field()  # 热量
     fat = scrapy.Field()  # 脂肪
     carbohydrate = scrapy.Field()  # 碳水化合物
-    potein = scrapy.Field()  # 蛋白质
+    protein = scrapy.Field()  # 蛋白质
     cholesterol = scrapy.Field()  # 胆固醇
     cellulose = scrapy.Field()  # 纤维素
     v_a = scrapy.Field()  # 维a
